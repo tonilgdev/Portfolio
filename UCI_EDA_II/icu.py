@@ -1,8 +1,7 @@
-import os
+
 import pandas as pd
 import dplython as dp
 import matplotlib.pyplot as plt
-
 import numpy as np
 import scipy.stats as st
 
@@ -27,8 +26,6 @@ def plot_jitter(x,y,title:str, varx:str, vary:str):
     plt.title(title)
     plt.xticks([0, 1])
     plt.yticks([0, 1])
-    plt.style.use('ggplot')
-
     # Shows the plot generated
     plt.show()
 
@@ -75,7 +72,7 @@ def plot_extra_analysis(x,y,title:str):
     ax.set_title(title)
     ax.legend(title='Prob. Distibution in %')
     plt.show()
-    pass
+
 
 def cross_analysis(x,y):
     cross_table = pd.crosstab(x, y)
@@ -85,13 +82,13 @@ def cross_analysis(x,y):
     return prob_cross_table.round(2)
 
 """
-In this section the two database files are read in order to work with them. The first that we will call 
-UCIDataset is the MIMIC-MIT data base v2. The other one (UCIDescription) is the description of all
-the parameters included in the data base.
+* In this section the two database files are read in order to work with them. The first that we will call 
+* UCIDataset is the MIMIC-MIT data base v2. The other one (UCIDescription) is the description of all
+* the parameters included in the data base.
 """
+
 UCIDataset = pd.read_csv("c:\\Users\\Toni\\Desktop\\Programming\\AA_Portfolio\\UCI_EDA_II\\ICU.csv")
 UCIDescription = pd.read_excel("c:\\Users\\Toni\\Desktop\\Programming\\AA_Portfolio\\UCI_EDA_II\\VariableDescriptionsUCI.xlsx")
-
 
 IDvariables = UCIDescription[UCIDescription['Type'] == "ID"]
 UCIDataset = dp.mutate(UCIDataset, IDvariables['VarName'], lambda x: x.astype(str))
