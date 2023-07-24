@@ -78,7 +78,6 @@ def cross_analysis(x,y):
     cross_table = pd.crosstab(x, y)
     prob_cross_table = (cross_table / cross_table.values.sum() ) * 100
     print(prob_cross_table)
-    print(type(prob_cross_table))
     return prob_cross_table.round(2)
 
 """
@@ -103,44 +102,44 @@ UCIDataset = dp.mutate(UCIDataset, Factorvariables['VarName'], lambda x: x.astyp
 plt.style.use('ggplot')
 
 # Depression against Paralysis
-x = UCIDataset["DEPRESSION"]
-y = UCIDataset["PARALYSIS"]
-plot_jitter(x,y,"Depression vs Paralysis, Jitter plot","DEPRESSION","PARALYSIS")
+x = UCIDataset["PARALYSIS"]
+y = UCIDataset["DEPRESSION"]
+plot_jitter(x,y,"Depression vs Paralysis, Jitter plot","PARALYSIS","DEPRESSION")
 plot_cross_analysis(x,y,"Depression vs Paralysis, Cross probability bar plot")
 plot_extra_analysis(x,y,"Depression over Paralysis and Depression, bar plot")
 
 
 # Depression against Neurological
-x = UCIDataset["DEPRESSION"]
-y = UCIDataset["OTHER_NEUROLOGICAL"]
-plot_jitter(x,y,"Depression vs Neurological injuries, Jitter plot","DEPRESSION","OTHER_NEUROLOGICAL")
+y = UCIDataset["DEPRESSION"]
+x = UCIDataset["OTHER_NEUROLOGICAL"]
+plot_jitter(x,y,"Depression vs Neurological injuries, Jitter plot","OTHER_NEUROLOGICAL","DEPRESSION")
 plot_cross_analysis(x,y,"Depression vs Neurological injuries, Cross probability bar plot")
 plot_extra_analysis(x,y,"Depression over Neurological injuries and Depression, bar plot")
 
 # Depression against CHRONIC_PULMONARY
-x = UCIDataset["DEPRESSION"]
-y = UCIDataset["CHRONIC_PULMONARY"]
-plot_jitter(x,y,"Depression vs Chronic Pulmonary Desease, Jitter plot","DEPRESSION","CHRONIC_PULMONARY")
+y = UCIDataset["DEPRESSION"]
+x = UCIDataset["CHRONIC_PULMONARY"]
+plot_jitter(x,y,"Depression vs Chronic Pulmonary Desease, Jitter plot","CHRONIC_PULMONARY","DEPRESSION")
 plot_cross_analysis(x,y,"Depression vs Chronic Pulmonary Desease, Cross probability bar plot")
 plot_extra_analysis(x,y,"Depression over Chronic Pulmonary Desease and Depression, bar plot")
 
 # Depression against AIDS
-x = UCIDataset["DEPRESSION"]
-y = UCIDataset["AIDS"]
-plot_jitter(x,y,"Depression vs AIDS, Jitter plot","DEPRESSION","AIDS")
+y = UCIDataset["DEPRESSION"]
+x = UCIDataset["AIDS"]
+plot_jitter(x,y,"Depression vs AIDS, Jitter plot","AIDS","DEPRESSION")
 plot_cross_analysis(x,y,"Depression vs AIDS, Cross probability bar plot")
 plot_extra_analysis(x,y,"Depression over AIDS and Depression, bar plot")
 
 # Depression against LYMPHOMA
-x = UCIDataset["DEPRESSION"]
-y = UCIDataset["LYMPHOMA"]
-plot_jitter(x,y,"Depression vs Lymphoma, Jitter plot","DEPRESSION","LYMPHOMA")
+y = UCIDataset["DEPRESSION"]
+x = UCIDataset["LYMPHOMA"]
+plot_jitter(x,y,"Depression vs Lymphoma, Jitter plot","LYMPHOMA","DEPRESSION")
 plot_cross_analysis(x,y,"Depression vs Lymphoma, Cross probability bar plot")
 plot_extra_analysis(x,y,"Depression over Lymphoma and Depression, bar plot")
 
 # Depression against METASTATIC_CANCER
-x = UCIDataset["DEPRESSION"]
-y = UCIDataset["METASTATIC_CANCER"]
-plot_jitter(x,y,"Depression vs Metastasic Cancer, Jitter plot","DEPRESSION","METASTATIC_CANCER")
+y = UCIDataset["DEPRESSION"]
+x = UCIDataset["METASTATIC_CANCER"]
+plot_jitter(x,y,"Depression vs Metastasic Cancer, Jitter plot","METASTATIC_CANCER","DEPRESSION")
 plot_cross_analysis(x,y,"Depression vs Metastasic Cancer, Cross probability bar plot")
 plot_extra_analysis(x,y,"Depression over Metastasic Cancer and Depression, bar plot")
