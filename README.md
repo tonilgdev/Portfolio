@@ -1,5 +1,8 @@
 # Antoni López Giménez's portfolio repository
 
+AUGUST '23 UPDATE
+> Currently, the repository is public and it will be created the document for UCI EDA v2
+
 JULY '23 UPDATE
 > Currently, the repository is public and  under creation.
 
