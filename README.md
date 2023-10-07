@@ -1,6 +1,7 @@
-# Toni López Giménez's portfolio repository
-
 <div align="center">
+  <h1>
+    Toni López Giménez's portfolio repository
+  </h1>
 <sub>Author:
 <a href="https://www.linkedin.com/in/toni-lopez-gimenez/" target="_blank">Toni's Linkedin Profile</a><br>
 </sub>
