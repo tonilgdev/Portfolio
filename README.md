@@ -17,7 +17,7 @@ In the software folder, you can find all the code developed by me, organized by 
 [Final Bachelor's Degree Thesis]()
 
 SEPTEMEBER '23 UPDATE
-> The repository is public and reorganized in order to be tidier. Links to Master's and Bachelor's theses have also been added.
+> The repository has been made public and reorganized for better tidiness. Links to both the Master’s and Bachelor’s theses have also been included.
 
 AUGUST '23 UPDATE
 > The repository is public and it will be created the document for UCI EDA v2
