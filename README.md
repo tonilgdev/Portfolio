@@ -1,5 +1,6 @@
 # Toni López Giménez's portfolio repository
 
+<div align="center">
 <sub>Author:
 <a href="https://www.linkedin.com/in/toni-lopez-gimenez/" target="_blank">Toni's Linkedin Profile</a><br>
 </sub>
@@ -10,11 +11,12 @@
 In the software folder, you can find all the code developed by me, organized by different programming languages and/or projects.
 
 ## Hardware
-:warning: :exclamation: No projects available.
+
+:warning::exclamation: No projects available.
 
 ## Academic Projects
-[Final Master's Thesis](https://github.com/tonilgdev/FinalMasterThesis_LopezGimenez)
-[Final Bachelor's Degree Thesis]()
+- [Final Master's Thesis](https://github.com/tonilgdev/FinalMasterThesis_LopezGimenez)
+- [Final Bachelor's Degree Thesis](https://github.com/tonilgdev/FinalBachelorThesis_LopezGimenez)
 
 SEPTEMEBER '23 UPDATE
 > The repository has been made public and reorganized for better tidiness. Links to both the Master’s and Bachelor’s theses have also been included.
